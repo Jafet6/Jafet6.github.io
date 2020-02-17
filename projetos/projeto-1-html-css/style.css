@@ -1,0 +1,96 @@
+* {
+    margin-left: 0px;
+}
+
+#cabecalho {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #8DA9C4;
+    width: 100%;
+    border-bottom: 2px solid #134074;
+    z-index: 2;
+}
+
+.lado-esquerdo {
+    float: left;
+    clear: left;
+    padding-left: 200px;
+    position: relative;
+    right: 200px;
+}
+
+.lado-direito {
+    float: right;
+    clear: right;
+    padding-left: 200px;
+    position: relative;
+    left: 500px;
+    bottom: 152px
+}
+
+.çlkjhgf {
+    float: right;
+    clear: right;
+    position: absolute;
+    left: 100px;
+    top: 10px;
+}
+
+.tabela {
+    float: right;
+    clear: right;
+    margin-right: 250px;
+    position: absolute;
+    right: 0px;
+    bottom: 45px;
+    z-index: 1;
+}
+
+.box-white {
+    height: 500px;
+    width: 290px;
+    background: rgb(204, 210, 216);
+    position: absolute;
+    top: 235px;
+    left: 1005px;
+}
+
+.azulNFL {
+    color: white;
+    background-color: #134074;
+    width: 50%;
+    margin-top: 125px;
+    padding: 25px 100% 25px 100px;
+    text-align: justify;
+    display: inline-block;
+}
+
+#nav {
+    display: inline-block;
+    margin-top: -100px;
+    padding-left: 150px;
+    padding-top: 12px;
+    text-decoration: none;
+    margin-bottom: 15px;
+    border-top: 2px solid #134074;
+    width: 100%;
+}
+
+.navesquerda {
+    text-decoration: none;
+}
+
+.direita {
+    padding-left: 50px;
+    text-decoration: none;
+}
+
+.direita2 {
+    padding-left: 50px;
+    text-decoration: none;
+}
+
+html {
+    scroll-padding-top: 150px;
+}
