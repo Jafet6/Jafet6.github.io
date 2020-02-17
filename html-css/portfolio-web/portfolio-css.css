@@ -1,0 +1,52 @@
+.header {
+    background-color: #FFFFFF; /**Quero fazer um quadrado no nome em azul, porém apenas a linha**/
+    color: #074D86;
+    border-bottom: 2px solid #074D86;
+    font-size: 2.5em;
+    text-align: left;
+}    
+#photo {
+    border-radius: 30px;
+}
+.p1colours {
+    background-color: #F2F2F2;
+    color: #074D86;
+    padding: 15px;
+}
+
+.head2 {
+    background-color: #FFFFFF; /**Quero fazer um quadrado no nome em azul, porém apenas a linha**/
+    color: #0C3A72;
+    font-size: 2em
+}
+p {
+    font-family: Montserrat, sans-serif;
+    font-weight: 100;
+    line-height: 28px;
+}
+.lists {
+    font-family: Montserrat, sans-serif;
+    color: #0A2E5B;
+    font-weight: bold;
+    line-height: 25px;
+}
+.style-link {
+    color: #074D86;
+    font-family: Montserrat, sans-serif;
+    line-height: 28px;
+    text-decoration: none
+}
+.buton {
+    background-color:  #074D86;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    padding: 12px 15px;
+    border-radius: 15px;
+}
+.paragraph-style {
+    float: right;
+    margin: 15px 650px 0px 0px;
+    line-height: 10px;
+    background-color: transparent;
+}
