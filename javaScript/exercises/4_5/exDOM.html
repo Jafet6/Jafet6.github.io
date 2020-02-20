@@ -84,7 +84,15 @@
       let imagem = document.createElement("img");
       imagem.src = "https://picsum.photos/200";
       imagem.className = "small-image";
-      document.querySelector(".left-content").appendChild(imagem);
+      document.querySelector(".center-content").nextSibling.appendChild(imagem);
+
+      let list = document.createElement("ul");
+      valores = ["Um", "Dois", "Três", "Quatro", "Cinco", "Seis", "Sete", "Oito", "Nove", "Dez"];
+      for (indice in valores){
+        let li = document.createElement("li");
+        li.innerHTML = valores[indice];
+        document.querySelector(".right-content").appendChild(li);
+      } 
 
       
     </script>
