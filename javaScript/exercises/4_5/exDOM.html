@@ -87,11 +87,12 @@
       document.querySelector(".center-content").nextSibling.appendChild(imagem);
 
       let list = document.createElement("ul");
+      document.querySelector(".right-content").appendChild(list);
       valores = ["Um", "Dois", "Três", "Quatro", "Cinco", "Seis", "Sete", "Oito", "Nove", "Dez"];
       for (indice in valores){
         let li = document.createElement("li");
         li.innerHTML = valores[indice];
-        document.querySelector(".right-content").appendChild(li);
+        document.querySelector("ul").appendChild(li);
       };
 
       for (let i = 0; i < 3; i++){
@@ -107,6 +108,9 @@
       div4.style.marginRight = "auto";
       
       div2.style.backgroundColor = "green";
+
+      list.removeChild(list.lastChild);
+      list.removeChild(list.lastChild)
 
 
     </script>
