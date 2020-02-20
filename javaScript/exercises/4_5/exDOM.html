@@ -71,7 +71,11 @@
 
       let paragraph = document.createElement("p");
       paragraph.innerHTML = "heheh";
-      document.querySelector(".center-content").appendChild(paragraph)
+      document.querySelector(".center-content").appendChild(paragraph);
+
+      let div3 = document.createElement("div");
+      div3.className = "left-content";
+      document.querySelector(".main-content").firstChild.appendChild(div3);
 
       
     </script>
