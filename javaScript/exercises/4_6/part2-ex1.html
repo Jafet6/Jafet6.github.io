@@ -7,16 +7,24 @@
   
   <script>
       window.onload = function (){
-      let button1 = document.getElementById("firstButton");
-      function click1() {
-        alert ("You clicked the button");
-      }
-      button1.onclick = function() {click1()};
+
+        let button1 = document.getElementById("firstButton");
+        function click1() {
+          alert ("You clicked the button");
+        }
+        button1.onclick = function() {click1()};
+
+        let img = document.getElementById("JsLogo");
+        function changeImg() {
+          return img.src = "nodejs.png";
+        }
+        function changeImg1() {
+          return img.src = "javascript.png";
+        }
+        img.addEventListener("mouseover", changeImg);
+        img.addEventListener("mouseout", changeImg1);
       }
   </script>
-     
-  
-
 
 </head>
 
@@ -50,6 +58,7 @@
           function click2 (){
             alert ("$" + Math.round(gamePrice * discount) + ",00 off!")
           };
+         
   </script>
   </script>> 
           <button onclick="click2()">Discount!</button>
@@ -65,8 +74,7 @@
     </li>
   </ol>            
       
-      
-      
+    <img onmouseover="changeImg" onmouseout="changeImg1" id="JsLogo" src="javascript.png" alt="Escudo do JavaScript">  
 </div>
   </div>
 
