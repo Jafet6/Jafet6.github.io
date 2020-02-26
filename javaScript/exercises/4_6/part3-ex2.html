@@ -19,30 +19,29 @@
     function catWalkLeft (){
       return img.style.left = (parseInt(img.style.left) - 10) + "px";
     }
-    
+    let walkingFowardRight = true;
    
     function walkingForEver() {
       let walk = parseInt(img.style.left);
-      console.log(typeof(walk));
-      let walkingFowardRight = true;
-
-      if(walk < (window.innerWidth -img.width) && walkingFowardRight === true){
-        catWalkRight();
-        console.log(walk)
-        console.log(walkingFowardRight);
-        console.log(window.innerWidth);
-      } 
-      if (walk + 400> window.innerWidth) {
-        walkingFowardRight = false;
-      }
-      if(walk > window.innerWidth && walkingFowardRight === false){
-        catWalkLeft();
-      }
-      if (walk === 0) {
+      console.log(window.innerWidth);
+      console.log(img.width);
+      console.log(walkingFowardRight);
+      console.log(window.innerWidth - img.width);
+      console.log(walk);
+ 
+      if (walk < (window.innerWidth - img.width) && walk <= 0) {
         walkingFowardRight = true;
-      }
-    }
-    window.setInterval(//walkingForEver, 25);
+      };
+      if (walk > (window.innerWidth - img.width)) {
+        walkingFowardRight = false;
+      };
+      if (walkingFowardRight) {
+        catWalkRight()
+      } else {
+        catWalkLeft()
+      };
+    };
+    window.setInterval(//walkingForEver, 50);
   </script>
  </body>
 </html>
