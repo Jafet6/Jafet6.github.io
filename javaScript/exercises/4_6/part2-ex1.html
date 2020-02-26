@@ -1,0 +1,82 @@
+<html><head>
+  <title>JavaScript event handlers exercise</title>
+<!-- load css from jsweb -->
+  <link rel="stylesheet" type="text/css" href="http://nptcstudents.co.uk/andrewg/jsweb/css/reset.css">    
+  <link rel="stylesheet" type="text/css" href="http://nptcstudents.co.uk/andrewg/jsweb/css/jsweb.css">
+  
+  
+  <script>
+      window.onload = function (){
+
+        let button1 = document.getElementById("firstButton");
+        function click1() {
+          alert ("You clicked the button");
+        }
+        button1.onclick = function() {click1()};
+
+        let img = document.getElementById("JsLogo");
+        function changeImg() {
+          return img.src = "nodejs.png";
+        }
+        function changeImg1() {
+          return img.src = "javascript.png";
+        }
+        img.addEventListener("mouseover", changeImg);
+        img.addEventListener("mouseout", changeImg1);
+      }
+  </script>
+
+</head>
+
+<body>
+<div id="excontainer">
+      <div id="pagecontent">
+  <h1>Event handlers exercise</h1>
+          
+    <p>Download this page and open with Dreamweaver.  Or right click and select "View Source", then cut and paste the code to Dreamweaver.</p>
+          
+          <h2>Task 1</h2>
+          
+          <p>Add a HTML button to this page in the area highlighted below.  Using the <b>onClick()</b> event handler have the button, when clicked, open an <b>alert()</b> box which says "You clicked the button". 
+          
+          </p><div class="exampleblock">            
+              <button id="firstButton">Click Here</button>
+          </div>                
+
+        <h2>Task 2</h2>
+          
+          <p>Add two lines of script to the &lt;script&gt; tag in the source of this page marked for this task (<b>lines 40 - 60</b>).  The first line should declare a new variable called <b>gamePrice</b> and should assign it the value <b>39.99</b>.  The second should declare a new variable called <b>discount</b> and assign it the value 0.20.</p>
+          
+          <p>Add a HTML button below the &lt;script&gt; tag.  Give this button an <b>onClick</b> event handler.  When the button is clicked it should multiply <b>gamePrice</b> by <b>discount</b> and present an alert box containing the phrase "£(result) off!".  You will need <a href="http://nptcstudents.co.uk/andrewg/jsweb/maths.html" target="_blank">concatenation</a> to achieve this.</p> 
+        
+        <script language="javascript" type="text/javascript">
+          
+          let button2 = document.querySelector("#secondButton");
+          let gamePrice = 39.99;
+          let discount = 0.2;
+            
+          function click2 (){
+            alert ("$" + Math.round(gamePrice * discount) + ",00 off!")
+          };
+         
+  </script>
+  </script>> 
+          <button onclick="click2()">Discount!</button>
+          
+          <p>You may want to consider using JavaScript's built in <a href="http://www.w3schools.com/js/js_obj_math.asp" target="_blank">Maths object</a> to round the number you get in your result to a more reasonable one.</p>
+      
+
+          <h2>Extensions</h2>
+  <ol>
+    <li>                
+      <p>For this task you will need two images of the same size.  Add one image into this page using a html <b>&lt;img /&gt;</b> tag.  Using the <b>onMouseOver()</b> and <b>onMouseOut()</b> event handlers try and make the image change to the second image when the mouse pointer hovers over it, and then swap back to the first image when the mouse pointer is moved off of the image.</p>
+      <p><a href="http://www.htmlite.com/JS019.php" target="_blank">This tutorial</a> may be of help!</p>   
+    </li>
+  </ol>            
+      
+    <img onmouseover="changeImg" onmouseout="changeImg1" id="JsLogo" src="javascript.png" alt="Escudo do JavaScript">  
+</div>
+  </div>
+
+
+</body></html>
