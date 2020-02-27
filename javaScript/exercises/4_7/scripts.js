@@ -64,5 +64,4 @@ window.onload = function() {
   if(localStorage.getItem("Font-Family")) {
     document.body.style.fontFamily = localStorage.getItem("Font-Family");
   }
-
 }
