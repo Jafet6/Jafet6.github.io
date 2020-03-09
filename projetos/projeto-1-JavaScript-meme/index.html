@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form>
+    <input type="text" id="text-input" maxlength="60">
+    <label for="text-input">Escreva seu texto</label>
+    <br>
+    <br>
+    <label for="meme-insert"> Upload Image</label>
+    <input type="file" id="meme-insert" accept="image/gif, image/jpeg, image/png">
+  </form>
+  <div id="buttons-container" class="buttons-container">
+  <button id="button1">Margem 1</button>
+  <button id="button2">Margem 2</button>
+  <button id="button3">Margem 3</button>
+  <div class="carrossel" role="listbox">
+    <img id="meme-1" class="imageSeparator" src="imgs/meme1.jpeg" alt="meme1" height="67px">
+    <img id="meme-2" class="imageSeparator" src="imgs/meme2.jpeg" alt="meme2" height="67px">
+    <img id="meme-3" class="imageSeparator" src="imgs/meme3.jpeg" alt="meme3" height="67px">
+    <img id="meme-4" class="imageSeparator" src="imgs/meme4.jpeg" alt="meme4" height="67px">
+  </div>
+  <div id="meme-image-container" class="image-container">
+    <img id="meme-image" class="style-image" width="400px">
+    <span id="meme-text" class="style-text"></span>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
