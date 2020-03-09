@@ -1,0 +1,27 @@
+.adicionando-tarefa {
+  cursor: pointer;
+}
+
+.removendo-tarefas {
+  cursor: pointer;
+}
+
+.remove-finalizados {
+  cursor: pointer;
+}
+
+.li-criada {
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.incompleted {
+  text-decoration: none;
+}
+
+.selecionado {
+  background-color: rgb(128,128,128);
+}

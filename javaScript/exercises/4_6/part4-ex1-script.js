@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
   let personName = "";
   
   getMood = document.getElementsByTagName("button")[0];

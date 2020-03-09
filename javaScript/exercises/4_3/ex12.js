@@ -1,4 +1,4 @@
-let roman = "XXX";
+let roman = "DCXCI";
 let parametrosRoman = {
   I: 1,
   V: 5,
@@ -23,9 +23,8 @@ function romanToNum(roman) {
     } else {
       total += parametrosRoman[arrayRoman[arrayRoman.length - 1 - (2 * i)]];
     }
-  }
+  };
   return total;
 }
 
-console.log(parametrosRoman["X"]);
 console.log(romanToNum(roman));
