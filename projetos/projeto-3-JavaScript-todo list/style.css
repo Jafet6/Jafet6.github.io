@@ -25,3 +25,117 @@
 .selecionado {
   background-color: rgb(128,128,128);
 }
+
+.body-container .buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 66%;
+  margin-top: 30px;
+  padding: 5px;
+}
+
+.remove-finalizados, .removendo-tarefas, .salva-lista{
+  border: none;
+  border-radius: 30px;
+  padding: 6px;
+  width: 160px;
+  background-color: #0066EC;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+  font-size: 15px;
+}
+
+.remove-finalizados:hover {
+  background-color: #00B8EC;
+}
+
+.salva-lista {
+  background-color: #00C500;
+  width: 115px;
+  cursor: pointer;
+}
+
+.salva-lista:hover {
+  background-color: #00E700;
+}
+
+.removendo-tarefas {
+  background-color: #A70000;
+  width: 125px;
+}
+
+.removendo-tarefas:hover {
+  background-color: #E72D00;
+}
+
+.removendo-selecionado, .move-cima, .move-baixo {
+  cursor: pointer;
+  border-radius: 100%;
+  border: none;
+  width: 30px;
+  background-color: #A70000;
+  color: white;
+}
+
+.removendo-selecionado:hover {
+  background-color: #E72D00;
+}
+
+.move-cima, .move-baixo {
+  background-color: #EBAB00;
+}
+
+.move-cima:hover, .move-baixo:hover {
+  background-color: #EBD200;
+}
+
+body {
+  display: flex;
+  background-color: #00C500;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.body-container {
+  background-color: white;
+  height: auto;
+  padding: 40px;
+  margin-top: 60px;
+  border-radius: 30px;
+  width: 60%;
+}
+
+header{
+  text-align: start;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+}
+
+p {
+  font-family: cursive;
+  padding-bottom: 5px;
+}
+
+.input-container {
+  width: 35%;
+  padding: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  justify-content: space-between;
+  display: flex;
+  
+}
+
+.adicionando-tarefa {
+  border-radius: 15px;
+  width: 110px;
+  height: 28px;
+  background-color: #0066EC;
+  border: none;
+  color: white;
+  
+}
+
+.adicionando-tarefa:hover {
+  background-color: #00B8EC;
+}
