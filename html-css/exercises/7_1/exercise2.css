@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+header p{
+  display: flex;
+  justify-content: center;
+}
+  
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media screen and (max-width: 320px){
+  body {
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+
+  body h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 415px){
+  body {
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  body h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px){
+  nav ul {
+    justify-content: center;
+  }
+  nav ul li {
+    margin-right: 30px;
+  }
+  body {
+    margin: 15px
+  }
+}
