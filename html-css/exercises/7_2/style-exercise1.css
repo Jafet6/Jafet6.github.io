@@ -1,0 +1,49 @@
+.show {
+  width: 50%;
+  color: #0fa36b;
+  font-size: 1rem;
+  opacity: 0;
+  margin-left: 25%;
+  animation: pshow 3s ease-in infinite;
+}
+
+@keyframes pshow {
+  from {
+    opacity: 0;
+    font-size: 1rem;
+    color: #0fa36b;
+  }
+  60% {
+    font-size: 1.6rem;
+    color: green;
+  }
+  to {
+    opacity: 1;
+    font-size: 1rem;
+    color: #34ebb7;
+  }
+}
+
+.slideRight {
+  margin-left: 0;
+  animation: slideright 5s infinite alternate-reverse 10s;
+}
+
+.slideRight:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slideright {
+  from {
+    margin-left: 0;
+  }
+
+  to {
+    margin-left: 100%;
+  }
+}
+
+button {
+  animation: slideright 1s infinite both;
+}
+
