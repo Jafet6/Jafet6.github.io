@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <style>
+      @keyframes square-rotating {
+        0% {
+          transform: rotate3d(1, 1, 1, 0deg);
+        }
+        100% {
+          transform: rotate3d(0, 1, 0, 360deg);
+        }
+      }
+      .square-rotating {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation: square-rotating 3s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="square-rotating"></div>
+  </body>
+</html>
