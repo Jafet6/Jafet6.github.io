@@ -1,0 +1,13 @@
+.ball {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid black;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.ball-container {
+  display: flex;
+  flex-direction: row;
+}
