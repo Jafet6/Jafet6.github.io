@@ -60,6 +60,11 @@ window.onload = function() {
 
   if(window.localStorage.getItem("Lista de Tarefas")){
     lista.innerHTML = window.localStorage.getItem("Lista de Tarefas");
+    for (let i = 0; i < document.querySelectorAll(".li-criada").length; i++) {
+      let item1 = document.getElementsByTagName("li")[i];
+      backgroundGrey(item1);
+      riskingOrNot(item1);
+    }
   }
 
   function deleteSelected() {

@@ -1,0 +1,188 @@
+body {
+  background-color: #e9ebee;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+.button-register {
+  background: linear-gradient(#67ae55, #578843);
+  background-color: #69a74e;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+  border-radius: 5px;
+  border: 1px solid #1c1e21;
+  box-shadow: inset 0 1px 1px #a4e388;
+  color: #fff;
+  cursor: pointer;
+  font-size: 19px;
+  padding: 7px 40px;
+  text-shadow: 0 1px 2px rgba(0,0,0,.5);
+
+}
+
+div section p {
+  padding-bottom: 8%;
+}
+
+.email-phone {
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+  width: 150px;
+}
+
+.email-phone label {
+  font-size: 0.85rem;
+  padding-bottom: 5px;
+}
+
+.emailCel {
+  padding-bottom: 3%;
+}
+
+.enter-button {
+  background-color: #4f7ac2;
+  border: 1px solid #4b4f56;
+  color: white;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 800;
+  height: 23px;
+  margin-top: 25px;
+  width: 47px;
+}
+
+.enter-button:hover {
+  background-color: #3b5998;
+}
+
+.generos {
+  display: flex;
+  flex-direction: column;
+}
+
+.generos .radios {
+  color: #1d2129;
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 18px;
+  padding-top: 3%;
+  padding-bottom: 6%;
+
+}
+
+.generos .FemininoRadio, .generos .masculinoRadio  {
+  margin-right: 5%;
+}
+
+.lado-direito {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1%;
+  margin-left: 20.5%;
+  width: 25%;
+}
+
+.login-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-right: 15%;
+}
+
+.nome-sobrenome {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 3%;
+}
+
+.nome-sobrenome input[name="firstname"]{
+  width: 48.5%;
+}
+
+.nome-sobrenome input[name="lastname"]{
+  width: 48.5%;
+}
+
+.pass {
+  padding-bottom: 5%;
+}
+
+.password {
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+  width: 150px;
+}
+
+.password label {
+  font-size: 0.85rem;
+  padding-bottom: 5px;
+}
+
+.registration-form {
+  padding-top: 4%;
+}
+
+.resgitro {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3%;
+}
+
+.resgitro span, .generos span {
+  color: #90949c;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+section {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 29px;
+  margin-left: 10%;
+  margin-top: 40px;
+  width: 450px;
+  word-spacing: -1px;
+}
+
+.text1 {
+  color: #333;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.text2 {
+  color: #333;
+  font-size: 18px;
+}
+
+.tudo {
+  font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+
+.top-bar {
+  align-items: center;
+  background-color: #3b5998;
+  background-image: linear-gradient(#4e69a2, #3b5998 50%);
+  color: white;
+  display: flex;
+  height: 5.2rem;
+  justify-content: space-between;
+  padding-bottom: 2px;
+
+}
+
+.top-bar .facebook-logo {
+  font-family: Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  margin-left: 18%;
+  margin-top: 10px;
+}
