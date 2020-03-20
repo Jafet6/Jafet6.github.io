@@ -19,7 +19,7 @@ const lesson3 = {
 };
 
 const objectAssign = () => {
-  allLessons = {};
+  let allLessons = {};
   allLessons['lesson1'] = {};
   allLessons['lesson2'] = {};
   allLessons['lesson3'] = {};
@@ -29,3 +29,17 @@ const objectAssign = () => {
   return allLessons;
 };
 
+const lessonsCount = (lessons, mat) => {
+  let count = 0;
+  for (let i = 0; i < Object.keys(lessons).length; i++) {
+    if (Object.values(lessons)[i].materia === mat) {
+      count += Object.values(lessons)[i].numeroEstudantes;
+    };
+  }
+  return count;
+};
+
+console.log(lessonsCount(objectAssign(), 'História'))
+// console.log(Object.keys(objectAssign()).length);
+// console.log(objectAssign());
+//console.log(lessonsCount(objectAssign(), 'Matemática'));

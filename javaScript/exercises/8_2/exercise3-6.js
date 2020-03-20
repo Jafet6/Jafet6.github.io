@@ -19,7 +19,7 @@ const lesson3 = {
 };
 
 const objectAssign = () => {
-  allLessons = {};
+  let allLessons = {};
   allLessons['lesson1'] = {};
   allLessons['lesson2'] = {};
   allLessons['lesson3'] = {};

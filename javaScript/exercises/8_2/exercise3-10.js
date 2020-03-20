@@ -29,4 +29,21 @@ const objectAssign = () => {
   return allLessons;
 };
 
-console.log (objectAssign())
+const reportTeacher = (lessons, name) => {
+  let countStu = 0;
+  let aula = [];
+  const objReport = {};
+  for (let i = 0; i < Object.keys(lessons).length; i++) {
+    if (Object.values(lessons)[i].professor === name) {
+      countStu += Object.values(lessons)[i].numeroEstudantes;
+      aula.push(Object.values(lessons)[i].materia);
+    }
+  }
+  objReport.professor = name;
+  objReport.aulas = aula;
+  objReport.estudantes = countStu;
+  return objReport
+}
+
+//console.log(Object.values(objectAssign()));
+console.log(reportTeacher(objectAssign(), 'Carlos'));
