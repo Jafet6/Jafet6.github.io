@@ -18,7 +18,6 @@ const passwordVerifier = (pass) => {
 }
 
 passwordValid = 'ANf19560';
-
 passWordInvalid = 'ANF19560';
 passWordInvalid1 = 'anf19560';
 passWordInvalid2 = 'ANFANFANF';
