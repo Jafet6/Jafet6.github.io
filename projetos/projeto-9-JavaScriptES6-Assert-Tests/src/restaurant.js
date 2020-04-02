@@ -107,6 +107,8 @@ const createMenu = (objMenu) => {
 
 restaurant = createMenu(objTest);
 
+
+
 // somaDosPreçosDosPedidos = () => {
 //   let count = 0;
 //   restaurant.consumption.forEach(e => console.log(e));
