@@ -1,9 +1,9 @@
-const API_URL = "https://icanhazdadjoke.com/";
+const API_URL = "https://icanhazdadjoke.com/"
 
-let joke = document.getElementById('jokeContainer');
 
-const fetchJoke = () => {
-  joke.innerHTML = 'kkk';
+const fetchJoke = (data) => {
+  let joke1 = document.getElementById('jokeContainer');
+  joke1.innerHTML = data;
 }
 
 const myObject = { 
@@ -11,8 +11,9 @@ const myObject = {
   headers: { 'Accept': 'application/json' }
 }
 
-fetch( API_URL)
-  .then((response) => console.log(response))
+fetch(API_URL, myObject)
+  .then((response) => response.json())
+  .then((data) => fetchJoke(data.joke))
         
 
 window.onload = () => fetchJoke()
