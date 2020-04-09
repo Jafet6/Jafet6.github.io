@@ -1,9 +1,9 @@
 {
   "scripts": {
     "start": "react-scripts start",
-   "build": "react-scripts build",
-   "test": "jest",
-   "eject": "react-scripts eject"
+    "build": "react-scripts build",
+    "test": "jest --watch --coverage",
+    "eject": "react-scripts eject"
   },
   "devDependencies": {
     "jest": "^25.2.6"
