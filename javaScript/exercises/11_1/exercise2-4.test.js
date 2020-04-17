@@ -21,8 +21,7 @@ test('Testing if todo list exist', () => {
 test('Testing if todo list exist Async/Await', async () => {
   expect.assertions(1);
   const data = await getRepos('https://api.github.com/users/tryber/repos');
-  const dataFind = data.find(el => el === 'sd-01-week4-5-project-todo-list');
-  expect(dataFind).toBe(undefined);
+  expect(data).toContain('sd-01-week13-project-frontend-online-store-group-2')
 })
 
 test('Testing if meme generator exist', () => {
@@ -36,8 +35,7 @@ test('Testing if meme generator exist', () => {
 test('Testing if meme generator exist Async/Await', async () => {
   expect.assertions(1);
   const data = await getRepos('https://api.github.com/users/tryber/repos');
-  const dataFind = data.find(el => el === 'sd-01-week4-5-project-todo-list');
-  expect(dataFind).toBe(undefined);
+  expect(data).toContain('sd-01-week10-movie-card-library-tests');
 })
 
 module.exports = getRepos
