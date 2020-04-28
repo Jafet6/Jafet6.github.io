@@ -1,0 +1,25 @@
+.pokemons-container {
+  border-radius: 10px;
+  border: 1px solid grey;
+  width: 38%;
+  padding: 1%;
+  margin: 1%;
+  display: flex;
+}
+
+.pokedex-cointainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.pokemons-data-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1px;
+}
+
+.pokemons-data-container:div {
+  padding: 1px;
+}
