@@ -26,6 +26,7 @@ class Pokedex extends React.Component {
   setPsychicPokemon = () => {
     const arrLength = pokemons.filter(e => e.type === 'Psychic').length;
     this.setState({
+      index: 0,
       length: arrLength,
       type: 'Psychic',
     })
@@ -34,6 +35,7 @@ class Pokedex extends React.Component {
   setFirePokemon = () => {
     const arrLength = pokemons.filter(e => e.type === 'Fire').length;
     this.setState({
+      index: 0,
       length: arrLength,
       type: 'Fire',
     })
@@ -50,9 +52,10 @@ class Pokedex extends React.Component {
 
   setAllPokemons = () => {
     this.setState({
+      index: 0,
       type: '',
       length: pokemons.length,
-  })
+    })
   }
   
   render() {
@@ -63,8 +66,6 @@ class Pokedex extends React.Component {
       }
       return pokemons;
     }
-    console.log(this.state.type)
-    console.log(this.state.length)
     return (
       <div>
         <h1>Pokedex</h1>
