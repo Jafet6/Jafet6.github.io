@@ -1,24 +1,18 @@
 import React from 'react';
 import Pokemon from './Pokemon';
 import pokemons from './data';
-import './Pokemon.css'
+import './Pokedex.css'
+import MyButton from './MyButton';
 
-class MyButton extends React.Component {
-  render() {
-    return (
-      <button onClick={() => this.props.handleClick()}>{this.props.label}</button>
-    )
-  }
-}
 
 class Pokedex extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      length: pokemons.filter(e => e.type === 'Psychic').length,
+      length: pokemons.length,
       index: 0,
       pokemon: '',
-      type: 'Psychic',
+      type: '',
     }
   }
 
@@ -73,7 +67,9 @@ class Pokedex extends React.Component {
           <div className='pokedex-cointainer'>
             <Pokemon pokes={arrSelected()[this.state.index]} />
           </div>
+
           <MyButton label={'Próximo Pokemon'} handleClick={this.setNextPokemon}/>
+          {pokemons.map((e) => <MyButton label={e.type} handleClick={this.setPsychicPokemon} />)}
           <MyButton label={'Psychic'} handleClick={this.setPsychicPokemon} />
           <MyButton label={'Fire'} handleClick={this.setFirePokemon} />
           <MyButton label={'All'} handleClick={this.setAllPokemons} />
