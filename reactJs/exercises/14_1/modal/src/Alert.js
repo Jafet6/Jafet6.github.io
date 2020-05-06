@@ -26,6 +26,7 @@ Alert.defaultProps = {
 
 Alert.propTypes = {
   hideComponent: PropTypes.func,
+  children: PropTypes.node.isRequired,
   children: PropTypes.shape({
     title: PropTypes.string,
     content: PropTypes.arrayOf(
