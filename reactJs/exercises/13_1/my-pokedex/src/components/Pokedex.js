@@ -1,6 +1,6 @@
 import React from 'react';
 import Pokemon from './Pokemon';
-import pokemons from './data';
+import pokemons from '../data';
 import './Pokedex.css'
 import MyButton from './MyButton';
 
@@ -16,22 +16,12 @@ class Pokedex extends React.Component {
     }
   }
 
-  
-  setPsychicPokemon = () => {
-    const arrLength = pokemons.filter(e => e.type === 'Psychic').length;
+  setNewTypePokemon = (type) => {
+    const arrLength = pokemons.filter(e => e.type === type).length;
     this.setState({
       index: 0,
       length: arrLength,
-      type: 'Psychic',
-    })
-  }
-  
-  setFirePokemon = () => {
-    const arrLength = pokemons.filter(e => e.type === 'Fire').length;
-    this.setState({
-      index: 0,
-      length: arrLength,
-      type: 'Fire',
+      type: type,
     })
   }
   
@@ -52,26 +42,37 @@ class Pokedex extends React.Component {
     })
   }
   
-  render() {
-    const arrSelected = () => {
-      if (this.state.type !== '') {
-        const selectedPokemon = pokemons.filter(e => e.type === this.state.type);
-        return selectedPokemon;
-      }
-      return pokemons;
+  arrSelected = () => {
+    if (this.state.type !== '') {
+      const selectedPokemon = pokemons.filter(e => e.type === this.state.type);
+      return selectedPokemon;
     }
+    return pokemons;
+  }
+
+  labelButtons = () => {
+    return pokemons.reduce((acc, e) => {
+      if (acc.includes(e.type)) {
+        return acc;
+      } else {
+        acc.push(e.type);
+        return acc;
+      }
+    }, [])
+  }
+
+  render() {
     return (
       <div>
         <h1>Pokedex</h1>
         <div>
           <div className='pokedex-cointainer'>
-            <Pokemon pokes={arrSelected()[this.state.index]} />
+            <Pokemon pokes={this.arrSelected()[this.state.index]} />
           </div>
 
           <MyButton label={'Próximo Pokemon'} handleClick={this.setNextPokemon}/>
-          {pokemons.map((e) => <MyButton label={e.type} handleClick={this.setPsychicPokemon} />)}
-          <MyButton label={'Psychic'} handleClick={this.setPsychicPokemon} />
-          <MyButton label={'Fire'} handleClick={this.setFirePokemon} />
+          {this.labelButtons().map((e) => <MyButton key={e} label={e} handleClick={this.setNewTypePokemon} />)}
+          
           <MyButton label={'All'} handleClick={this.setAllPokemons} />
         </div>
       </div>

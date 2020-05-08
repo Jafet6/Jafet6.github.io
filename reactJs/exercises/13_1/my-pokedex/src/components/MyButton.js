@@ -3,8 +3,9 @@ import './MyButton.css'
 
 class MyButton extends React.Component {
   render(){
+    const { label, handleClick } = this.props;
     return(
-      <button type="button" onClick={this.props.handleClick}>{this.props.label}</button>
+      <button type="button" onClick={() => handleClick(label)}>{label}</button>
     )
   }
 }
