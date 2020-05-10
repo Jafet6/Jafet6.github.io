@@ -71,6 +71,7 @@ class Pokedex extends React.Component {
           </div>
 
           <MyButton label={'Próximo Pokemon'} handleClick={this.setNextPokemon}/>
+          
           {this.labelButtons().map((e) => <MyButton key={e} label={e} handleClick={this.setNewTypePokemon} />)}
           
           <MyButton label={'All'} handleClick={this.setAllPokemons} />
