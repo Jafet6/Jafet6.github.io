@@ -1,0 +1,34 @@
+.payment-method-container {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.billet-credit-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.billet-radio-icon label {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.credit-card-icon {
+  margin-right: 1rem;
+}
+
+.credit-card-icon label {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.credit-card-icon label img {
+  padding: 0.5rem;
+}
+
+.credit-card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
