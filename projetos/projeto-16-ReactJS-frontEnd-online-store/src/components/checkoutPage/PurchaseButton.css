@@ -1,0 +1,15 @@
+.purchase-btn-container {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.purchase-btn {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  height: 40px;
+  width: 80px;
+}
