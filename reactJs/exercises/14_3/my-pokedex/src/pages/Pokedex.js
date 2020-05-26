@@ -1,8 +1,8 @@
 import React from 'react';
-import Pokemon from './Pokemon';
+import Pokemon from '../components/Pokemon';
 import pokemons from '../data';
 import './Pokedex.css'
-import MyButton from './MyButton';
+import MyButton from '../components/MyButton';
 
 
 class Pokedex extends React.Component {
@@ -13,6 +13,7 @@ class Pokedex extends React.Component {
       index: 0,
       pokemon: '',
       type: '',
+      isFav: [],
     }
   }
 
@@ -62,12 +63,13 @@ class Pokedex extends React.Component {
   }
 
   render() {
+    const { isFav } = this.props;
     return (
       <div>
         <h1>Pokedex</h1>
         <div>
           <div className='pokedex-cointainer'>
-            <Pokemon pokes={this.arrSelected()[this.state.index]} />
+            <Pokemon arrFav={isFav} pokes={this.arrSelected()[this.state.index]} />
           </div>
 
           <MyButton label={'Próximo Pokemon'} handleClick={this.setNextPokemon}/>
