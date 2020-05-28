@@ -12,12 +12,13 @@ class RegisteredClients extends React.Component {
 
   sortNames = () => {
     const { sorted } = this.state;
-    const copiedArr = [...this.props.clientsList]
+    const { clientsList } = this.props;
+    const copiedArr = [...clientsList];
     const newOrderedList = copiedArr.sort((a, b) =>(a.name > b.name) ? 1 : -1);
     if(!sorted) {
       return this.setState({ arrClients: newOrderedList, sorted: true, });
     }
-    return this.setState({ arrClients: this.props.clientsList, sorted: false})
+    return this.setState({ arrClients: clientsList, sorted: false })
   }
 
   render() {
