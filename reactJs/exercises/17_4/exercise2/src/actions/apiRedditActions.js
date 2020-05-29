@@ -8,9 +8,9 @@ const apiRequestInfo = () => ({
   type:API_REQUEST,
 });
 
-const receiveApiPostsSuccess = (kkk) => ({
+const receiveApiPostsSuccess = ({ data }) => ({
   type: API_RECEIVE_SUCCESS,
-  kkk,
+  allData: data.children,
 });
 
 const receiveApiPostsFailure = (error) => ({
@@ -19,10 +19,10 @@ const receiveApiPostsFailure = (error) => ({
 })
 
 export function getApiDataPosts(posts) {
-
   return (dispatch) => {
-    dispatch(apiRequestInfo());
-
+    dispatch(apiRequestInfo())
+    
+    console.log(posts);
     return apiRequest(posts)
       .then(
         (dataPosts) => dispatch(receiveApiPostsSuccess(dataPosts), console.log(dataPosts)),

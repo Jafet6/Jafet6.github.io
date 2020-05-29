@@ -18,7 +18,7 @@ const apiRedditReducer = (state = INITIAL_STATE, action) => {
     case API_RECEIVE_SUCCESS:
       return {
         ...state,
-        data: action.children,
+        data: action.allData,
         loading: false,
       };
     case API_RECEIVE_FAILURE:
