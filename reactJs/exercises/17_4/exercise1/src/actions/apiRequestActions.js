@@ -25,7 +25,7 @@ const receiveGotApiFailure = (errorMessage) => ({
 
 
 export function fetchGotApi(textTyped) {
-
+  console.log(textTyped);
   return (dispatch) => {
     dispatch(requestGotApi())
 
