@@ -4,10 +4,12 @@ import { render, cleanup, fireEvent } from '@testing-library/react';
 import App from './App';
 import { createStore, combineReducers } from 'redux';
 import countReducer from './reducer/countReducer';
+import sumInputReducer from './reducer/sumInputReducer'
 
 const renderWithRedux = (
   component,
-  { initialState, store = createStore(combineReducers({ countReducer }), initialState) } = {}
+  { initialState, store = createStore(combineReducers(
+    { countReducer, sumInputReducer }), initialState) } = {}
 ) => {
   return {
     ...render(<Provider store={store}>{component}</Provider>),
@@ -19,7 +21,9 @@ const renderWithRedux = (
 describe('Testing click counter', () => {
   afterEach(cleanup);
   test('Testing standard value for initial state', () => {
-    const { getByRole, getByTestId } = renderWithRedux(<App />, { initialState: {countReducer: 0 }});
+    const { getByRole, getByTestId } = renderWithRedux(
+      <App />, { initialState: { countReducer: 10, sumInputReducer: 0 }}
+    );
 
     const boardCount = getByTestId('board');
 
@@ -33,7 +37,9 @@ describe('Testing click counter', () => {
   })
 
   test('Testing standard value for initial state', () => {
-    const { getByRole, getByTestId } = renderWithRedux(<App />, { initialState: {countReducer: 10 }});
+    const { getByRole, getByTestId } = renderWithRedux(
+      <App />, { initialState: { countReducer: 10, sumInputReducer: 0 }}
+    );
 
     const boardCount = getByTestId('board');
 
@@ -45,4 +51,25 @@ describe('Testing click counter', () => {
     expect(clickButton).toBeInTheDocument();
     expect(boardCount).toHaveTextContent(13);
   })
+
+  test('Testing sum inputs', () => {
+    const { getByTestId, getByText } = renderWithRedux(
+      <App />, { initialState: { countReducer: 10, sumInputReducer: 0 }}
+    );
+
+    const input1 = getByTestId('input1');
+    expect(input1).toBeInTheDocument();
+    fireEvent.change(input1, { target: { value: 2 } });
+
+    const input2 = getByTestId('input2');
+    expect(input2).toBeInTheDocument();
+    fireEvent.change(input1, { target: { value: 3 } });
+
+    const input3 = getByTestId('input3');
+    expect(input3).toBeInTheDocument();
+    fireEvent.change(input1, { target: { value: 5 } });
+
+    expect(getByText('Contador: 10')).toBeInTheDocument();
+  })
+
 })

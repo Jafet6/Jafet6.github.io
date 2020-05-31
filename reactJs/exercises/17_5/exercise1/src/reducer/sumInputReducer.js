@@ -3,7 +3,7 @@ import { NUMBER1, NUMBER2, NUMBER3 } from '../actions/sumInputAction';
 const INITIAL_STATE_SUM = 0;
 
 const sumInputReducer = (state = INITIAL_STATE_SUM, action) => {
-  console.log(state);
+  // console.log(state);
   switch (action.type) {
     case NUMBER1:
       return state + Number(action.value);

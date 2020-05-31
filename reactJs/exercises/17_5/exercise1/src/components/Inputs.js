@@ -10,19 +10,19 @@ class Inputs extends React.Component {
         <div>
           <label htmlFor="number1">
             Número 1
-            <input onChange={(e) => this.props.changedInput1(e.target.value)} type="number" id="number1" />
+            <input data-testid="input1" onChange={(e) => this.props.changedInput1(e.target.value)} type="number" id="number1" />
           </label>
           <label htmlFor="number2">
             Número 2
-            <input onChange={(e) => this.props.changedInput2(e.target.value)} type="number" id="number2" />
+            <input data-testid="input2" onChange={(e) => this.props.changedInput2(e.target.value)} type="number" id="number2" />
           </label>
           <label htmlFor="number3">
             Número 3
-            <input onChange={(e) => this.props.changedInput3(e.target.value)} type="number" id="number3" />
+            <input data-testid="input3" onChange={(e) => this.props.changedInput3(e.target.value)} type="number" id="number3" />
           </label>
         </div>
         <div>
-          <span>{this.props.count}</span>
+          <span>{`Contador: ${this.props.count}`}</span>
         </div>
       </div>
     )
