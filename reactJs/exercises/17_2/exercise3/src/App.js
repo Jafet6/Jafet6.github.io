@@ -1,65 +1,49 @@
 import React, { Component } from 'react';
-import InputTodo from './InputTodo';
-import Item from './Item';
+import InputTodo from './components/InputTodo';
+import Item from './components/Item';
+import { connect } from 'react-redux';
+import { removeInputAction } from './actions/removeInputAction';
 
 class App extends Component {
   constructor(props) {
     super(props)
-
     this.state = {
-      listTodo: [],
-      selectedItem: '',
       disabledBtn: true,
     };
     this.removeItem = this.removeItem.bind(this);
-    this.addTodo = this.addTodo.bind(this);
-    this.selectedItem = this.selectedItem.bind(this);
-  }
-
-  addTodo(todo) {
-    this.setState((state) => ({
-      listTodo: [...state.listTodo, todo],
-    }), () => {
-      this.disableBtn();
-    });
+    this.disableBtn = this.disableBtn.bind(this);
   }
 
   disableBtn() {
-    const { listTodo } = this.state;
-    if (listTodo.length) {
-      return this.setState({ disabledBtn: false })
-    }
+    const { listTodo } = this.props;
+    console.log(listTodo.length)
+    if (listTodo.length > 0) {
+      return this.setState({ disabledBtn: false });
+    };
     return this.setState({ disabledBtn:true });
-  }
+  };
 
-  selectedItem(item) {
-    this.setState({ selectedItem: item })
-  }
-
-  removeItem() {
-    const { selectedItem, listTodo } = this.state;
+  async removeItem() {
+    const { selectedItem, listTodo, removeInput } = this.props;
     const index = listTodo.findIndex((e) => e === selectedItem);
-    const arrCopied = listTodo;
-    arrCopied.splice(index, 1)
-    this.setState({
-      listTodo: arrCopied
-    }, () => {
-      this.disableBtn();
-    });
-    
-  }
+    const arrCopied = [...listTodo];
+    arrCopied.splice(index, 1);
+    await removeInput(arrCopied);
+    this.disableBtn();
+  };
 
   render() {
-    const { listTodo, disabledBtn } = this.state;
+    const { disabledBtn } = this.state;
+    const { listTodo } = this.props;
     return (
       <div className="App">
-        <InputTodo addTodo={(todo) => this.addTodo(todo)} />
+        <InputTodo disableButton={this.disableBtn} />
         {listTodo &&
           <ul>
             {
               listTodo.map((todo, index) => (
                 <li key={index + 1}>
-                  <Item onClick={this.selectedItem} content={todo} />
+                  <Item content={todo} />
                 </li>
               ))
             }
@@ -77,5 +61,16 @@ class App extends Component {
       </div>
     );
   }
-}
-export default App;
+};
+
+const mapStateToProps = (state) => ({
+  listTodo: state.addInputReducer.list,
+  listLength: state.addInputReducer.listLength,
+  selectedItem: state.selectItemReducer.itemSelected,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  removeInput: (newArr) => dispatch(removeInputAction(newArr)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
