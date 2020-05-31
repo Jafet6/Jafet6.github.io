@@ -3,7 +3,7 @@ const NUMBER2 = 'NUMBER2';
 const NUMBER3 = 'NUMBER3';
 
 const sumInput1 = (inputNumber1) => {
-  console.log('input1: ', inputNumber1);
+  // console.log('input1: ', inputNumber1);
   return {
     type: NUMBER1,
     value: inputNumber1,
