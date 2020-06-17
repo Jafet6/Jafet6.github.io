@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import InputTodo from './components/InputTodo';
 import Item from './components/Item';
-import { connect } from 'react-redux';
-import { removeInputAction } from './actions/removeInputAction';
+import TodoListContext from './Contexts/TodoListContext';
 
 class App extends Component {
   constructor(props) {
@@ -10,38 +9,17 @@ class App extends Component {
     this.state = {
       disabledBtn: true,
     };
-    this.removeItem = this.removeItem.bind(this);
-    this.disableBtn = this.disableBtn.bind(this);
   }
 
-  disableBtn() {
-    const { listTodo } = this.props;
-    console.log(listTodo.length)
-    if (listTodo.length > 0) {
-      return this.setState({ disabledBtn: false });
-    };
-    return this.setState({ disabledBtn:true });
-  };
-
-  async removeItem() {
-    const { selectedItem, listTodo, removeInput } = this.props;
-    const index = listTodo.findIndex((e) => e === selectedItem);
-    const arrCopied = [...listTodo];
-    arrCopied.splice(index, 1);
-    await removeInput(arrCopied);
-    this.disableBtn();
-  };
-
   render() {
-    const { disabledBtn } = this.state;
-    const { listTodo } = this.props;
+    const { list, removeItem, disableBtn, disabledBtn } = this.context;
     return (
       <div className="App">
-        <InputTodo disableButton={this.disableBtn} />
-        {listTodo &&
+        <InputTodo disableButton={disableBtn} />
+        {list &&
           <ul>
             {
-              listTodo.map((todo, index) => (
+              list.map((todo, index) => (
                 <li key={index + 1}>
                   <Item content={todo} />
                 </li>
@@ -52,7 +30,7 @@ class App extends Component {
         <button
           data-testid="id-remove"
           type="button"
-          onClick={this.removeItem}
+          onClick={removeItem}
           value="Remover"
           disabled={disabledBtn}
         >
@@ -63,14 +41,6 @@ class App extends Component {
   }
 };
 
-const mapStateToProps = (state) => ({
-  listTodo: state.addInputReducer.list,
-  listLength: state.addInputReducer.listLength,
-  selectedItem: state.selectItemReducer.itemSelected,
-});
+App.contextType = TodoListContext;
 
-const mapDispatchToProps = (dispatch) => ({
-  removeInput: (newArr) => dispatch(removeInputAction(newArr)),
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;

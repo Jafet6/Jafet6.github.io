@@ -1,22 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { selectItemAction } from '../actions/selectItemAction';
+import TodoListContext from '../Contexts/TodoListContext';
 
 function Item(props) {
-  const { content, selectedItem } = props;
+  const { content } = props;
   return (
-    <div onClick={() => selectedItem(content)} className="Item">
-      {content}
-    </div>
+    <TodoListContext.Consumer>
+      {({ selectedItem }) => (
+      <div onClick={() => selectedItem(content)} className="Item">
+        {content}
+      </div>
+      )}
+    </TodoListContext.Consumer>
   );
 }
 
-const mapDispatchToProps = (dispatch) => ({
-  selectedItem: (item) => dispatch(selectItemAction(item)),
-})
-
-export default connect(null, mapDispatchToProps)(Item);
+export default Item;
 
 Item.propTypes = {
   content: PropTypes.string.isRequired,
