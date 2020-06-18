@@ -1,21 +1,25 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { getApiDataPosts } from '../actions/apiRedditActions';
+// import { connect } from 'react-redux';
+// import { getApiDataPosts } from '../actions/apiRedditActions';
 import ApiSearchControl from './ApiSearchControl';
+import redditContext from '../contexts/redditContext';
 
-function HomePage (props) {
-  const { searchDispatch } = props;
+function HomePage () {
   return (
-    <div>
-      <button type="button" onClick={() => searchDispatch('reactjs')}>ReactJs</button>
-      <button type="button" onClick={() => searchDispatch('frontend')}>FrontEnd</button>
-      <ApiSearchControl />
-    </div>
+    <redditContext.Consumer>
+      {(context) => (
+        <div>
+          <button type="button" onClick={() => context.apiSearchRequest('reactjs')}>ReactJs</button>
+          <button type="button" onClick={() => context.apiSearchRequest('frontend')}>FrontEnd</button>
+          <ApiSearchControl />
+        </div>
+      )}
+    </redditContext.Consumer>
   )
 }
 
-const mapDispatchToProps = (dispatch) => ({
-  searchDispatch: (search) => dispatch(getApiDataPosts(search)),
-});
+// const mapDispatchToProps = (dispatch) => ({
+//   searchDispatch: (search) => dispatch(getApiDataPosts(search)),
+// });
 
-export default connect(null, mapDispatchToProps)(HomePage);
+export default HomePage;
