@@ -1,0 +1,11 @@
+.game-board {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: 120px;
+}
+
+.container-tic-tac-toe {
+  display: flex;
+  justify-content: center;
+}
