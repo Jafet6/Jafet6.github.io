@@ -1,75 +1,68 @@
-import React from 'react';
-import TodoListContext from '../Contexts/TodoListContext';
+import React, { createContext, useState, useEffect } from 'react';
 
-class Provider extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      disabledBtn: true,
-      textTodo: '',
-      selectedItem: '',
-      list: [],
+const TodoListContext = createContext();
+TodoListContext.displayName = 'TodoList';
+
+const TodoProvider = ({ children }) => {
+
+  const [disabledBtn, setDisabledBtn] = useState(true);
+  const [textTodo, setTextTodo] = useState('');
+  const [selectedItem, setSelectedItem] = useState('');
+  const [list, setList] = useState([]);
+
+  useEffect(() => {
+    const disableBtn = () => {
+      if (list.length > 0) {
+        return setDisabledBtn(false);
+      };
+      return setDisabledBtn(true);
     };
-    this.removeItem = this.removeItem.bind(this);
-    this.changeTextTodo = this.changeTextTodo.bind(this);
-    this.selectedItem = this.selectedItem.bind(this);
-    this.addItem = this.addItem.bind(this);
-  }
+    disableBtn()
+  }, [list])
 
-  disableBtn() {
-    const { list } = this.state;
-    if (list.length > 0) {
-      return this.setState({ disabledBtn: false });
-    };
-    console.log(this.state.disabledBtn)
-    return this.setState({ disabledBtn:true });
+
+  const changeTextTodo = (value) => {
+    setTextTodo(value);
   };
 
-  changeTextTodo(value) {
-    this.setState({ textTodo: value });
+  const selectedItemFunc = (value) => {
+    setSelectedItem(value);
   };
 
-  selectedItem(value) {
-    this.setState({ selectedItem: value });
-  };
-
-  addItem() {
-    const { list, textTodo } = this.state;
+  const addItem = (textTodo) => {
     const newArr = [...list, textTodo];
-    console.log(newArr)
-    this.setState({
-      list: newArr,
-      textTodo: '',
-      disabledBtn: false,
-    });    
+    setList(newArr)
+    setTextTodo('');
+    setDisabledBtn(false);    
   };
 
-  async removeItem() {
-    const { selectedItem, list } = this.state;
+  const removeItem = () => {
     const index = list.findIndex((e) => e === selectedItem);
     const arrCopied = [...list];
     arrCopied.splice(index, 1);
-    this.setState({ list: arrCopied },
-      () => this.disableBtn()
-    );
+    console.log(arrCopied)
+    setList(arrCopied)
+    console.log(list)
+    // disableBtn()
   };
 
-  render() {
-    const contextObj = {
-      ...this.state,
-      addItem: this.addItem,
-      removeItem: this.removeItem,
-      selectedItem: this.selectedItem,
-      changeTextTodo: this.changeTextTodo,
-    }
-    return (
-      <TodoListContext.Provider value={contextObj}>
-        {this.props.children}
-      </TodoListContext.Provider>
-    )
+  
+  const contextObj = {
+    disabledBtn,
+    addItem,
+    removeItem,
+    selectedItemFunc,
+    changeTextTodo,
+    textTodo,
+    list,
+    selectedItem,
   }
+
+  return (
+    <TodoListContext.Provider value={contextObj}>
+      {children}
+    </TodoListContext.Provider>
+  )
 }
 
-Provider.contextType = TodoListContext;
-
-export default Provider;
+export { TodoProvider, TodoListContext };

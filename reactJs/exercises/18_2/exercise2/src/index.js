@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Provider from './Providers/Provider';
+import { TodoProvider } from './Providers/Provider';
 
 
 ReactDOM.render(
-  <Provider>
+  <TodoProvider>
     <App />
-  </Provider>,
+  </TodoProvider>,
   document.getElementById('root')
 );
 

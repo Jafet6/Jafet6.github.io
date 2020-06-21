@@ -1,17 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
-import TodoListContext from '../Contexts/TodoListContext';
+import { TodoListContext } from '../Providers/Provider';
 
 function Item(props) {
   const { content } = props;
+  const {
+    selectedItemFunc,
+  } = useContext(TodoListContext);
   return (
-    <TodoListContext.Consumer>
-      {({ selectedItem }) => (
-      <div onClick={() => selectedItem(content)} className="Item">
-        {content}
-      </div>
-      )}
-    </TodoListContext.Consumer>
+    <div onClick={() => selectedItemFunc(content)} className="Item">
+      {content}
+    </div>
   );
 }
 
