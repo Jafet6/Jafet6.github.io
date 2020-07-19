@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1594913337868" clover="3.2.0">
+  <project timestamp="1594913337868" name="All files">
+    <metrics statements="672" coveredstatements="619" conditionals="258" coveredconditionals="203" methods="227" coveredmethods="197" elements="1157" coveredelements="1019" complexity="0" loc="672" ncloc="672" packages="27" files="45" classes="45"/>
+    <package name="src">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="App.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/App.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="8" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.Routes">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Routes.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/Routes/Routes.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Categories">
+      <metrics statements="29" coveredstatements="29" conditionals="10" coveredconditionals="10" methods="8" coveredmethods="7"/>
+      <file name="ListCategories.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/components/Categories/ListCategories.js">
+        <metrics statements="29" coveredstatements="29" conditionals="10" coveredconditionals="10" methods="8" coveredmethods="7"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="14" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="23" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="31" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="39" count="5" type="stmt"/>
+        <line num="40" count="71" type="stmt"/>
+        <line num="41" count="71" type="stmt"/>
+        <line num="42" count="71" type="stmt"/>
+        <line num="51" count="71" type="stmt"/>
+        <line num="54" count="216" type="stmt"/>
+        <line num="56" count="4" type="stmt"/>
+        <line num="66" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.ContentHeader">
+      <metrics statements="4" coveredstatements="4" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <file name="ContentHeader.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/components/ContentHeader/ContentHeader.js">
+        <metrics statements="4" coveredstatements="4" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="62" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="62" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Favorite">
+      <metrics statements="37" coveredstatements="36" conditionals="10" coveredconditionals="9" methods="11" coveredmethods="11"/>
+      <file name="FavoriteButton.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/components/Favorite/FavoriteButton.js">
+        <metrics statements="37" coveredstatements="36" conditionals="10" coveredconditionals="9" methods="11" coveredmethods="11"/>
+        <line num="8" count="6" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="31" count="6" type="stmt"/>
+        <line num="32" count="78" type="stmt"/>
+        <line num="33" count="78" type="stmt"/>
+        <line num="34" count="78" type="stmt"/>
+        <line num="35" count="78" type="stmt"/>
+        <line num="36" count="50" type="cond" truecount="2" falsecount="0"/>
+        <line num="37" count="23" type="stmt"/>
+        <line num="39" count="27" type="stmt"/>
+        <line num="40" count="27" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="4" type="stmt"/>
+        <line num="42" count="4" type="stmt"/>
+        <line num="46" count="78" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="53" count="78" type="stmt"/>
+        <line num="54" count="2" type="stmt"/>
+        <line num="55" count="3" type="stmt"/>
+        <line num="56" count="2" type="stmt"/>
+        <line num="57" count="2" type="stmt"/>
+        <line num="58" count="2" type="stmt"/>
+        <line num="60" count="78" type="stmt"/>
+        <line num="61" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="64" count="2" type="stmt"/>
+        <line num="66" count="3" type="stmt"/>
+        <line num="67" count="3" type="stmt"/>
+        <line num="69" count="78" type="stmt"/>
+        <line num="70" count="3" type="stmt"/>
+        <line num="81" count="6" type="stmt"/>
+        <line num="85" count="6" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Footer">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="Footer.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/components/Footer/Footer.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="9" count="192" type="stmt"/>
+        <line num="24" count="64" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.HeaderSearchBar">
+      <metrics statements="26" coveredstatements="22" conditionals="18" coveredconditionals="11" methods="4" coveredmethods="4"/>
+      <file name="HeaderSearchBarContext.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/components/HeaderSearchBar/HeaderSearchBarContext.js">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="7" count="10" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="10" count="72" type="stmt"/>
+        <line num="11" count="72" type="stmt"/>
+        <line num="13" count="72" type="stmt"/>
+        <line num="15" count="72" type="stmt"/>
+        <line num="20" count="10" type="stmt"/>
+      </file>
+      <file name="searchButtonFunction.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/components/HeaderSearchBar/searchButtonFunction.js">
+        <metrics statements="18" coveredstatements="14" conditionals="18" coveredconditionals="11" methods="3" coveredmethods="3"/>
+        <line num="3" count="7" type="stmt"/>
+        <line num="9" count="7" type="stmt"/>
+        <line num="10" count="4" type="cond" truecount="3" falsecount="1"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="4" type="cond" truecount="2" falsecount="2"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="18" count="7" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="27" count="4" type="cond" truecount="2" falsecount="2"/>
+        <line num="28" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="37" count="7" type="stmt"/>
+        <line num="45" count="4" type="cond" truecount="3" falsecount="1"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="48" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Heading">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Heading.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/components/Heading/Heading.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Loading">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <file name="Loading.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/components/Loading/Loading.js">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="10" count="73" type="stmt"/>
+        <line num="12" count="73" type="stmt"/>
+        <line num="13" count="46" type="stmt"/>
+        <line num="14" count="46" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="46" type="stmt"/>
+        <line num="19" count="73" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Recipes.RecipeCard">
+      <metrics statements="18" coveredstatements="18" conditionals="16" coveredconditionals="16" methods="6" coveredmethods="6"/>
+      <file name="RecipeCard.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/components/Recipes/RecipeCard/RecipeCard.js">
+        <metrics statements="18" coveredstatements="18" conditionals="16" coveredconditionals="16" methods="6" coveredmethods="6"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="780" type="stmt"/>
+        <line num="13" count="780" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="31" count="780" type="stmt"/>
+        <line num="32" count="780" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="59" count="4" type="stmt"/>
+        <line num="60" count="780" type="stmt"/>
+        <line num="61" count="780" type="stmt"/>
+        <line num="74" count="4" type="stmt"/>
+        <line num="75" count="784" type="stmt"/>
+        <line num="76" count="784" type="stmt"/>
+        <line num="77" count="784" type="cond" truecount="2" falsecount="0"/>
+        <line num="78" count="780" type="stmt"/>
+        <line num="89" count="4" type="stmt"/>
+        <line num="93" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Recipes.RecipeList">
+      <metrics statements="28" coveredstatements="28" conditionals="16" coveredconditionals="15" methods="15" coveredmethods="13"/>
+      <file name="RecipeList.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/components/Recipes/RecipeList/RecipeList.js">
+        <metrics statements="28" coveredstatements="28" conditionals="16" coveredconditionals="15" methods="15" coveredmethods="13"/>
+        <line num="11" count="10" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="9" type="stmt"/>
+        <line num="19" count="9" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="23" count="9" type="stmt"/>
+        <line num="26" count="27" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="39" count="4" type="stmt"/>
+        <line num="40" count="77" type="stmt"/>
+        <line num="41" count="77" type="stmt"/>
+        <line num="42" count="77" type="stmt"/>
+        <line num="43" count="77" type="stmt"/>
+        <line num="44" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="45" count="3" type="stmt"/>
+        <line num="47" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="48" count="12" type="stmt"/>
+        <line num="49" count="12" type="stmt"/>
+        <line num="51" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="52" count="7" type="stmt"/>
+        <line num="53" count="7" type="stmt"/>
+        <line num="56" count="77" type="stmt"/>
+        <line num="57" count="29" type="stmt"/>
+        <line num="60" count="77" type="stmt"/>
+        <line num="71" count="770" type="stmt"/>
+        <line num="78" count="10" type="stmt"/>
+        <line num="90" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Share">
+      <metrics statements="9" coveredstatements="6" conditionals="4" coveredconditionals="3" methods="3" coveredmethods="1"/>
+      <file name="ShareButton.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/components/Share/ShareButton.js">
+        <metrics statements="9" coveredstatements="6" conditionals="4" coveredconditionals="3" methods="3" coveredmethods="1"/>
+        <line num="7" count="7" type="stmt"/>
+        <line num="8" count="75" type="stmt"/>
+        <line num="9" count="75" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="75" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="25" count="7" type="stmt"/>
+        <line num="29" count="7" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.DetailsPage">
+      <metrics statements="9" coveredstatements="9" conditionals="9" coveredconditionals="9" methods="2" coveredmethods="2"/>
+      <file name="RecipeButtonControl.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/DetailsPage/RecipeButtonControl.js">
+        <metrics statements="9" coveredstatements="9" conditionals="9" coveredconditionals="9" methods="2" coveredmethods="2"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="39" type="stmt"/>
+        <line num="8" count="39" type="stmt"/>
+        <line num="10" count="39" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="37" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="29" count="35" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.DetailsPage.DetailsRecipePage">
+      <metrics statements="57" coveredstatements="55" conditionals="22" coveredconditionals="22" methods="14" coveredmethods="13"/>
+      <file name="DetailsRecipeContent.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/DetailsPage/DetailsRecipePage/DetailsRecipeContent.js">
+        <metrics statements="29" coveredstatements="27" conditionals="11" coveredconditionals="11" methods="6" coveredmethods="5"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="65" type="stmt"/>
+        <line num="11" count="65" type="stmt"/>
+        <line num="13" count="65" type="stmt"/>
+        <line num="15" count="65" type="stmt"/>
+        <line num="16" count="65" type="stmt"/>
+        <line num="19" count="65" type="stmt"/>
+        <line num="20" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="12" type="stmt"/>
+        <line num="22" count="12" type="stmt"/>
+        <line num="25" count="65" type="stmt"/>
+        <line num="26" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="31" count="65" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="36" count="65" type="stmt"/>
+        <line num="37" count="13" type="cond" truecount="1" falsecount="0"/>
+        <line num="38" count="26" type="stmt"/>
+        <line num="39" count="26" type="cond" truecount="4" falsecount="0"/>
+        <line num="40" count="13" type="stmt"/>
+        <line num="42" count="13" type="stmt"/>
+        <line num="45" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="46" count="12" type="stmt"/>
+        <line num="47" count="12" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="54" count="65" type="stmt"/>
+      </file>
+      <file name="DetailsRecipesPage.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/DetailsPage/DetailsRecipePage/DetailsRecipesPage.js">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="65" type="stmt"/>
+        <line num="9" count="65" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="39" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+      </file>
+      <file name="Ingredients.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/DetailsPage/DetailsRecipePage/Ingredients.js">
+        <metrics statements="5" coveredstatements="5" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="39" type="stmt"/>
+        <line num="6" count="39" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="39" type="stmt"/>
+        <line num="13" count="318" type="stmt"/>
+      </file>
+      <file name="RecipeComponent.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/DetailsPage/DetailsRecipePage/RecipeComponent.js">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="39" type="stmt"/>
+        <line num="12" count="39" type="stmt"/>
+        <line num="14" count="39" type="stmt"/>
+      </file>
+      <file name="RecommendedCard.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/DetailsPage/DetailsRecipePage/RecommendedCard.js">
+        <metrics statements="10" coveredstatements="10" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="78" type="stmt"/>
+        <line num="10" count="78" type="stmt"/>
+        <line num="11" count="78" type="stmt"/>
+        <line num="13" count="78" type="stmt"/>
+        <line num="14" count="78" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="72" type="stmt"/>
+        <line num="18" count="78" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+      </file>
+      <file name="RecommendedContainerComponent.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/DetailsPage/DetailsRecipePage/RecommendedContainerComponent.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="39" type="stmt"/>
+        <line num="9" count="39" type="stmt"/>
+        <line num="14" count="78" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.DoneRecipes">
+      <metrics statements="22" coveredstatements="22" conditionals="12" coveredconditionals="10" methods="11" coveredmethods="11"/>
+      <file name="DoneRecipesList.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/DoneRecipes/DoneRecipesList.js">
+        <metrics statements="22" coveredstatements="22" conditionals="12" coveredconditionals="10" methods="11" coveredmethods="11"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="26" count="6" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="40" count="3" type="stmt"/>
+        <line num="41" count="3" type="stmt"/>
+        <line num="42" count="3" type="stmt"/>
+        <line num="43" count="3" type="stmt"/>
+        <line num="44" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="56" count="3" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="59" count="3" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+        <line num="77" count="2" type="stmt"/>
+        <line num="89" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.DrinkMainPage">
+      <metrics statements="10" coveredstatements="9" conditionals="9" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <file name="Drinks.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/DrinkMainPage/Drinks.js">
+        <metrics statements="10" coveredstatements="9" conditionals="9" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="24" type="stmt"/>
+        <line num="11" count="24" type="cond" truecount="0" falsecount="1"/>
+        <line num="12" count="24" type="stmt"/>
+        <line num="14" count="24" type="stmt"/>
+        <line num="15" count="7" type="stmt"/>
+        <line num="18" count="24" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="17" type="cond" truecount="1" falsecount="1"/>
+        <line num="21" count="17" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.ExplorerPages">
+      <metrics statements="78" coveredstatements="65" conditionals="34" coveredconditionals="27" methods="24" coveredmethods="20"/>
+      <file name="Explorer.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/ExplorerPages/Explorer.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="8" count="2" type="stmt"/>
+      </file>
+      <file name="ExplorerByIngredients.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/ExplorerPages/ExplorerByIngredients.js">
+        <metrics statements="33" coveredstatements="25" conditionals="18" coveredconditionals="13" methods="7" coveredmethods="5"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="42" count="3" type="stmt"/>
+        <line num="45" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="52" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="79" count="8" type="stmt"/>
+        <line num="80" count="8" type="stmt"/>
+        <line num="81" count="8" type="stmt"/>
+        <line num="82" count="8" type="stmt"/>
+        <line num="83" count="8" type="stmt"/>
+        <line num="84" count="8" type="stmt"/>
+        <line num="85" count="2" type="stmt"/>
+        <line num="88" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="90" count="3" type="stmt"/>
+      </file>
+      <file name="ExplorerByOrigem.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/ExplorerPages/ExplorerByOrigem.js">
+        <metrics statements="22" coveredstatements="19" conditionals="8" coveredconditionals="7" methods="10" coveredmethods="9"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="28" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="61" count="3" type="stmt"/>
+        <line num="62" count="3" type="stmt"/>
+        <line num="63" count="3" type="stmt"/>
+        <line num="65" count="3" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="69" count="3" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+        <line num="73" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="74" count="2" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="86" count="2" type="stmt"/>
+      </file>
+      <file name="ExplorerDrinkOrFood.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/ExplorerPages/ExplorerDrinkOrFood.js">
+        <metrics statements="21" coveredstatements="19" conditionals="8" coveredconditionals="7" methods="5" coveredmethods="5"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="23" count="7" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="37" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="3" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="65" count="4" type="stmt"/>
+        <line num="66" count="4" type="stmt"/>
+        <line num="67" count="4" type="stmt"/>
+        <line num="68" count="3" type="stmt"/>
+        <line num="71" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="72" count="3" type="stmt"/>
+        <line num="83" count="1" type="stmt"/>
+      </file>
+      <file name="NotFound.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/ExplorerPages/NotFound.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.FavoriteRecipes">
+      <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+      <file name="FavoriteRecipes.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/FavoriteRecipes/FavoriteRecipes.js">
+        <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="7" type="stmt"/>
+        <line num="8" count="7" type="stmt"/>
+        <line num="9" count="7" type="stmt"/>
+        <line num="10" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="14" count="7" type="stmt"/>
+        <line num="15" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="7" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.FoodMainPage">
+      <metrics statements="10" coveredstatements="9" conditionals="10" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <file name="Foods.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/FoodMainPage/Foods.js">
+        <metrics statements="10" coveredstatements="9" conditionals="10" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="39" type="stmt"/>
+        <line num="11" count="39" type="cond" truecount="0" falsecount="1"/>
+        <line num="12" count="39" type="cond" truecount="0" falsecount="1"/>
+        <line num="14" count="39" type="stmt"/>
+        <line num="15" count="13" type="stmt"/>
+        <line num="18" count="39" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="26" type="cond" truecount="1" falsecount="1"/>
+        <line num="21" count="26" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.FoodMainPage.Context">
+      <metrics statements="24" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="7"/>
+      <file name="FoodContext.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/FoodMainPage/Context/FoodContext.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="10" type="stmt"/>
+      </file>
+      <file name="FoodProvider.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/FoodMainPage/Context/FoodProvider.js">
+        <metrics statements="23" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="7"/>
+        <line num="7" count="10" type="stmt"/>
+        <line num="8" count="118" type="stmt"/>
+        <line num="9" count="118" type="stmt"/>
+        <line num="10" count="118" type="stmt"/>
+        <line num="11" count="118" type="stmt"/>
+        <line num="12" count="118" type="stmt"/>
+        <line num="14" count="118" type="stmt"/>
+        <line num="15" count="12" type="stmt"/>
+        <line num="16" count="12" type="stmt"/>
+        <line num="17" count="12" type="stmt"/>
+        <line num="19" count="118" type="stmt"/>
+        <line num="20" count="13" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="23" count="118" type="stmt"/>
+        <line num="24" count="7" type="stmt"/>
+        <line num="25" count="7" type="stmt"/>
+        <line num="26" count="7" type="stmt"/>
+        <line num="28" count="118" type="stmt"/>
+        <line num="29" count="7" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="32" count="118" type="stmt"/>
+        <line num="45" count="118" type="stmt"/>
+        <line num="52" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.Login">
+      <metrics statements="18" coveredstatements="18" conditionals="6" coveredconditionals="5" methods="9" coveredmethods="9"/>
+      <file name="Login.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/Login/Login.js">
+        <metrics statements="18" coveredstatements="18" conditionals="6" coveredconditionals="5" methods="9" coveredmethods="9"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="9" count="9" type="stmt"/>
+        <line num="11" count="9" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="17" count="9" type="stmt"/>
+        <line num="18" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="22" count="9" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="28" count="9" type="stmt"/>
+        <line num="34" count="3" type="stmt"/>
+        <line num="36" count="3" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.RecipesInProgress">
+      <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+      <file name="RecipeInProgressProvider.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/RecipesInProgress/RecipeInProgressProvider.js">
+        <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="7" count="10" type="stmt"/>
+        <line num="8" count="108" type="stmt"/>
+        <line num="9" count="108" type="stmt"/>
+        <line num="10" count="108" type="stmt"/>
+        <line num="12" count="108" type="stmt"/>
+        <line num="13" count="108" type="stmt"/>
+        <line num="14" count="108" type="stmt"/>
+        <line num="15" count="13" type="stmt"/>
+        <line num="16" count="325" type="stmt"/>
+        <line num="17" count="13" type="stmt"/>
+        <line num="20" count="108" type="stmt"/>
+        <line num="29" count="108" type="stmt"/>
+        <line num="36" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.RecipesInProgress.RecipesInProgressPage">
+      <metrics statements="96" coveredstatements="93" conditionals="29" coveredconditionals="26" methods="23" coveredmethods="22"/>
+      <file name="IngredientsCheckbox.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/RecipesInProgress/RecipesInProgressPage/IngredientsCheckbox.js">
+        <metrics statements="30" coveredstatements="30" conditionals="10" coveredconditionals="10" methods="10" coveredmethods="10"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="39" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="13" type="stmt"/>
+        <line num="9" count="26" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="39" type="stmt"/>
+        <line num="14" count="169" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="91" type="stmt"/>
+        <line num="16" count="13" type="stmt"/>
+        <line num="20" count="13" type="stmt"/>
+        <line num="22" count="26" type="stmt"/>
+        <line num="26" count="26" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="198" type="stmt"/>
+        <line num="31" count="198" type="stmt"/>
+        <line num="32" count="198" type="stmt"/>
+        <line num="33" count="120" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="36" type="stmt"/>
+        <line num="37" count="3" type="stmt"/>
+        <line num="38" count="3" type="stmt"/>
+        <line num="42" count="198" type="stmt"/>
+        <line num="43" count="198" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="536" type="stmt"/>
+        <line num="46" count="68" type="stmt"/>
+        <line num="48" count="130" type="stmt"/>
+        <line num="51" count="198" type="stmt"/>
+        <line num="64" count="39" type="stmt"/>
+        <line num="65" count="39" type="stmt"/>
+        <line num="66" count="39" type="stmt"/>
+        <line num="79" count="2" type="stmt"/>
+      </file>
+      <file name="RecipeInProgressComponent.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/RecipesInProgress/RecipesInProgressPage/RecipeInProgressComponent.js">
+        <metrics statements="26" coveredstatements="25" conditionals="11" coveredconditionals="8" methods="5" coveredmethods="5"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="16" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="18" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="33" count="24" type="stmt"/>
+        <line num="34" count="24" type="stmt"/>
+        <line num="35" count="24" type="cond" truecount="1" falsecount="0"/>
+        <line num="36" count="24" type="stmt"/>
+        <line num="37" count="42" type="stmt"/>
+        <line num="38" count="42" type="cond" truecount="2" falsecount="0"/>
+        <line num="39" count="40" type="stmt"/>
+        <line num="41" count="24" type="stmt"/>
+        <line num="47" count="172" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+      </file>
+      <file name="RecipesInProgressContent.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/RecipesInProgress/RecipesInProgressPage/RecipesInProgressContent.js">
+        <metrics statements="35" coveredstatements="33" conditionals="6" coveredconditionals="6" methods="7" coveredmethods="6"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="10" type="stmt"/>
+        <line num="15" count="10" type="stmt"/>
+        <line num="22" count="10" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="40" type="stmt"/>
+        <line num="27" count="40" type="stmt"/>
+        <line num="28" count="40" type="stmt"/>
+        <line num="29" count="40" type="stmt"/>
+        <line num="30" count="40" type="stmt"/>
+        <line num="32" count="40" type="stmt"/>
+        <line num="33" count="9" type="stmt"/>
+        <line num="34" count="9" type="stmt"/>
+        <line num="37" count="40" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="42" count="40" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="47" count="40" type="stmt"/>
+        <line num="48" count="10" type="stmt"/>
+        <line num="49" count="10" type="stmt"/>
+        <line num="50" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="51" count="9" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="55" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="56" count="9" type="stmt"/>
+        <line num="57" count="9" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="64" count="40" type="stmt"/>
+      </file>
+      <file name="RecipesInProgressPage.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/RecipesInProgress/RecipesInProgressPage/RecipesInProgressPage.js">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="40" type="stmt"/>
+        <line num="9" count="40" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="20" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.UserProfile">
+      <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
+      <file name="Profile.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/pages/UserProfile/Profile.js">
+        <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="20" type="stmt"/>
+        <line num="10" count="20" type="stmt"/>
+        <line num="11" count="20" type="stmt"/>
+        <line num="12" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="12" type="stmt"/>
+        <line num="17" count="20" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="22" count="20" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="15" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.services">
+      <metrics statements="112" coveredstatements="89" conditionals="32" coveredconditionals="11" methods="56" coveredmethods="39"/>
+      <file name="searchBarAPI.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/services/searchBarAPI.js">
+        <metrics statements="15" coveredstatements="15" conditionals="6" coveredconditionals="3" methods="9" coveredmethods="9"/>
+        <line num="1" count="7" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="9" count="7" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="17" count="7" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="cond" truecount="1" falsecount="1"/>
+      </file>
+      <file name="theCockTailAPI.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/services/theCockTailAPI.js">
+        <metrics statements="43" coveredstatements="33" conditionals="14" coveredconditionals="4" methods="23" coveredmethods="14"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="2" count="19" type="stmt"/>
+        <line num="3" count="19" type="stmt"/>
+        <line num="4" count="19" type="stmt"/>
+        <line num="5" count="19" type="cond" truecount="1" falsecount="1"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="11" count="7" type="stmt"/>
+        <line num="12" count="7" type="stmt"/>
+        <line num="13" count="7" type="cond" truecount="1" falsecount="1"/>
+        <line num="17" count="10" type="stmt"/>
+        <line num="18" count="10" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="25" count="10" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="33" count="10" type="stmt"/>
+        <line num="34" count="10" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="39" count="10" type="stmt"/>
+        <line num="40" count="10" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="45" count="10" type="stmt"/>
+        <line num="46" count="10" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="49" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="52" count="10" type="stmt"/>
+        <line num="53" count="10" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="56" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="59" count="10" type="stmt"/>
+        <line num="60" count="10" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="63" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="theMealAPI.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/services/theMealAPI.js">
+        <metrics statements="54" coveredstatements="41" conditionals="12" coveredconditionals="4" methods="24" coveredmethods="16"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="2" count="14" type="stmt"/>
+        <line num="3" count="14" type="stmt"/>
+        <line num="4" count="13" type="stmt"/>
+        <line num="5" count="13" type="cond" truecount="1" falsecount="1"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="11" count="12" type="stmt"/>
+        <line num="12" count="12" type="stmt"/>
+        <line num="13" count="12" type="cond" truecount="1" falsecount="1"/>
+        <line num="19" count="10" type="stmt"/>
+        <line num="20" count="10" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="27" count="10" type="stmt"/>
+        <line num="28" count="21" type="stmt"/>
+        <line num="29" count="21" type="stmt"/>
+        <line num="30" count="21" type="stmt"/>
+        <line num="31" count="21" type="cond" truecount="1" falsecount="1"/>
+        <line num="35" count="10" type="stmt"/>
+        <line num="36" count="10" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="41" count="10" type="stmt"/>
+        <line num="42" count="10" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="47" count="10" type="stmt"/>
+        <line num="48" count="10" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="53" count="10" type="stmt"/>
+        <line num="54" count="10" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="59" count="10" type="stmt"/>
+        <line num="60" count="10" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="65" count="10" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="71" count="10" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="75" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="79" count="10" type="stmt"/>
+        <line num="80" count="0" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="83" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+    </package>
+    <package name="src.tests.utilitiesTest">
+      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="mockFetch.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/tests/utilitiesTest/mockFetch.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="4" type="stmt"/>
+      </file>
+      <file name="renderWithContext.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/tests/utilitiesTest/renderWithContext.js">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="9" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="67" type="stmt"/>
+        <line num="11" count="67" type="stmt"/>
+        <line num="12" count="67" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.untils">
+      <metrics statements="26" coveredstatements="26" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
+      <file name="destructureObject.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/untils/destructureObject.js">
+        <metrics statements="19" coveredstatements="19" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="1119" type="stmt"/>
+        <line num="5" count="1119" type="stmt"/>
+        <line num="6" count="1119" type="stmt"/>
+        <line num="7" count="1119" type="stmt"/>
+        <line num="8" count="1119" type="stmt"/>
+        <line num="9" count="1119" type="stmt"/>
+        <line num="10" count="1119" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="516" type="stmt"/>
+        <line num="12" count="516" type="stmt"/>
+        <line num="13" count="516" type="stmt"/>
+        <line num="14" count="516" type="stmt"/>
+        <line num="15" count="516" type="stmt"/>
+        <line num="16" count="516" type="stmt"/>
+        <line num="19" count="1119" type="stmt"/>
+        <line num="20" count="1119" type="stmt"/>
+        <line num="25" count="1119" type="stmt"/>
+        <line num="27" count="1119" type="stmt"/>
+        <line num="45" count="1119" type="stmt"/>
+      </file>
+      <file name="ingredientsWithQuantity.js" path="/home/jafet/projetos/sd-03-recipes-app-03/src/untils/ingredientsWithQuantity.js">
+        <metrics statements="7" coveredstatements="7" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="1119" type="stmt"/>
+        <line num="4" count="1119" type="stmt"/>
+        <line num="5" count="18710" type="cond" truecount="4" falsecount="0"/>
+        <line num="6" count="7197" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="7197" type="stmt"/>
+        <line num="9" count="18710" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

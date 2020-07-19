@@ -1,0 +1,10 @@
+SELECT * FROM sakila.film;
+SELECT title AS title, release_year AS 'release year', rating AS rating FROM sakila.film;
+SELECT DISTINCT last_name FROM sakila.actor;
+SELECT COUNT(film_id) FROM sakila.film;
+SELECT COUNT(customer_id) FROM sakila.customer;
+SELECT COUNT(DISTINCT last_name) FROM sakila.actor;
+SELECT COUNT(category_id) FROM sakila.film_category;
+SELECT COUNT(country_id) FROM sakila.country;
+SELECT * FROM sakila.language WHERE name != 'English';
+SELECT title, release_year, length, rating, replacement_cost FROM sakila.film ORDER BY length DESC, replacement_cost ASC LIMIT 20;
