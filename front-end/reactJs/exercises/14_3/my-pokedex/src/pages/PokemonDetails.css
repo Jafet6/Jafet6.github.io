@@ -1,0 +1,26 @@
+.star {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  background: none;
+  border: none;
+}
+
+.star {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+.star > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+  font-size: 2em;
+}
+
+.star > span:hover:before,
+
+.star > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+   color: gold;
+}

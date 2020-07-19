@@ -1,0 +1,28 @@
+.profile {
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  margin: 10% auto;
+  max-width: 400px;
+  min-height: 600px;
+  overflow: hidden;
+  width: 90%;
+}
+
+.align-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.profile-btn {
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  margin: 3%;
+  padding: 2%;
+  width: 100%;
+}

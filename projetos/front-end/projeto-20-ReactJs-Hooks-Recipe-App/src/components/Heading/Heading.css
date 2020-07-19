@@ -1,0 +1,21 @@
+.personal-icon {
+  margin: 0;
+  width: 100px;
+}
+
+.heading-container {
+  align-items: center;
+  align-self: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  justify-content: center;
+  margin: -69px auto 0 auto;
+  text-shadow: -3px -3px 0 white, 3px -3px 0 white, -3px 3px 0 white, 3px 3px 0 white;
+  z-index: 2;
+}
+
+.title {
+  margin-bottom: 0;
+}
