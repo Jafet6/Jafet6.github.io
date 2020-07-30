@@ -1,0 +1,1 @@
+db.superherosColec.deleteOne({ "publisher": "Sony Pictures" });

@@ -1,0 +1,1 @@
+db.superherosColec.find({ "race": { $exists: false } }).count();

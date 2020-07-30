@@ -1,0 +1,1 @@
+db.superherosColec.find({ "aspects.height": { $lte: 180 }}).count();

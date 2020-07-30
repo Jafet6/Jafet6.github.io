@@ -1,0 +1,1 @@
+db.superherosColec.find({ "aspects.hairColor": { $in: [ "Black", "No Hair" ] }}).count();

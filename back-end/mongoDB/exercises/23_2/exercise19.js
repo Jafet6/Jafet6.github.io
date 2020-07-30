@@ -1,0 +1,1 @@
+db.superherosColec.deleteMany({ "Publisher": "George Lucas" });
