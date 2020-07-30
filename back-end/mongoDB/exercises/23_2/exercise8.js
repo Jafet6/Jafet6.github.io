@@ -1,0 +1,1 @@
+db.superherosColec.find({"aspects.eyeColor": "blue"}).count();

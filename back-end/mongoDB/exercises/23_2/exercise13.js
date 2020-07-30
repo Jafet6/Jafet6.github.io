@@ -1,0 +1,1 @@
+db.superherosColec.find({ $nor: [{ race: "Human" }, { "aspects.height": { $gt: 180 } }] });

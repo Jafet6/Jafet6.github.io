@@ -1,0 +1,1 @@
+db.superherosColec.find({ "aspects.height": { $not: { $gt: 180 } } }).count();

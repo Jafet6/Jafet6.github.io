@@ -1,0 +1,1 @@
+db.superherosColec.find({ "aspects.height": { $gte: 200 } }).limit(1);
