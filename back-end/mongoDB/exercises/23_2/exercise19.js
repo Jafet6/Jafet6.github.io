@@ -1,1 +1,1 @@
-db.superherosColec.deleteMany({ "Publisher": "George Lucas" });
+db.superherosColec.deleteMany({ "publisher": "George Lucas" });
