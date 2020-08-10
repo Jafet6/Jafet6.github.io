@@ -9,3 +9,14 @@ db.movies.updateOne(
     }
   }
 );
+
+db.voos.updateOne(
+  { "vooId": 743217 },
+  { $set: { "servicoDeBordo.$[elemento].quantidade": 80 }},
+  { $arrayFilters: [{ "elemento.item": "guaraná" }]}
+ )
+ db.voos.updateOne(
+  { "vooId": 743218 },
+  { $set: { "servicoDeBordo.$[elemento].quantidade": 100 }},
+  { arrayFilters: [{ $or: [{ "elemento.item": "café" }, {"elemento.item": "vinho"}]}]}
+ )
