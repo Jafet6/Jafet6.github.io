@@ -7,7 +7,7 @@ db.vendas.aggregate([
       },
       "status": "EM SEPARACAO"
     }
-  }, 
+  },
   {
     $addFields: {
       "dataEntregaPrevista": { $add: [ "$dataVenda", 3 * 24 * 60 * 60 * 1000 ] }
