@@ -1,0 +1,11 @@
+{
+  "name": "exercise4",
+  "version": "1.0.0",
+  "description": "Exercise about promise, async/await, callbacks NodeJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jafet Henrique",
+  "license": "ISC"
+}
