@@ -22,9 +22,10 @@ const startPromise = async () => {
   const answer = await question('Which file would you like do read?');
   try {
     const fileRead = await readFile(path.resolve(__dirname, answer));
-    console.log(fileRead.toString('utf8'))
+    console.log(fileRead.toString('utf8'));
+    console.log(fileRead.byteLength);
   } catch (err) {
-    console.log(err.message)
+    console.log(err);
   }
 }
 
