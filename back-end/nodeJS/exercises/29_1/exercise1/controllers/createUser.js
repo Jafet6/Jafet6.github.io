@@ -7,6 +7,7 @@ const someOtherPlaintextPassword = 'not_bacon';
 module.exports = (req, res) => {
 
   const password = req.body.password;
+  
   bcrypt.hash(password, saltRounds, function(err, hash) {
     const data = new Model({
       username: req.body.username,

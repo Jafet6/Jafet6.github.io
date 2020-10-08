@@ -1,12 +1,14 @@
 const mongoClient = require('mongodb').MongoClient;
 
+const URL = 'mongodb+srv://Jafet:LEGF1995!@teste-jafet.kiwoy.mongodb.net/NomeQualquer?retryWrites=true&w=majority'
+
 module.exports = () =>
   mongoClient
-    .connect(process.env.MONGO_DB_URL, {
+    .connect(URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     })
-    .then((conn) => conn.db(process.env.DB_NAME))
+    .then((conn) => conn.db('storeManager'))
     .catch((err) => {
       console.log(err);
       process.exit(1);

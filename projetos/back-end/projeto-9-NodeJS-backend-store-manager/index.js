@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 // const controllers = require('./controllers');
 const { productsRouter } = require('./controllers/routers/productsRouter');
 const { salesRouter } = require('./controllers/routers/salesRouter');
@@ -13,6 +14,13 @@ app.use(bodyParser.json());
 app.get('/', (request, response) => {
   response.send();
 });
+
+var corsOptions = {
+  origin: 'http://example.com',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
+
+app.use(cors(corsOptions));
 
 app.use('/products', productsRouter);
 app.use('/sales', salesRouter);
