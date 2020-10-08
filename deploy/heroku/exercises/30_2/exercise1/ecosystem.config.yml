@@ -1,0 +1,16 @@
+apps:
+
+- name: app
+  script: ./index.js
+  exec_mode: cluster
+  instance: max
+  watch: true
+  max_memory_restart: 100M
+  env_prod:
+    MESSAGE: production
+  env_homolog:
+    MESSAGE: homologação
+- name: app-1
+  script: ./indexCopy.js
+  
+  
