@@ -20,8 +20,8 @@ class ScreenLog(LogManipulator):
 
 
 class Log:
-    def __init__(self, manipulator):
-        self.__manipulator = manipulator
+    def __init__(self, manipulators):
+        self.__manipulators = set(manipulators)
 
-    def print(self):
-        self.__manipulator.log()
+    def add(self, manipulator):
+        self.__manipulators.add(manipulator)
